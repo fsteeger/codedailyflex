@@ -2,7 +2,7 @@ import React from 'react';
 import { generateRandomNumbers,getGif } from './helper'
 import { render } from 'react-dom';
 import { data } from './exercises'
-import { Button,Jumbotron,Alert } from 'reactstrap';
+import { Button,Alert } from 'reactstrap';
 
 
   
@@ -64,22 +64,22 @@ class DailyFlex extends React.Component {
         >Create Workout</Button>
         <hr />
         <div style={{display: this.state.showExercises }}>
-          <Jumbotron>
+          <Alert color="secondary">
             <h2>Warm up</h2>
             <div>1: {this.state.warmup}</div>
             <div>2: {this.state.warmup1}</div>
-          </Jumbotron>
-          <Jumbotron>
+          </Alert>
+          <Alert color="secondary">
             <h2>Exercise</h2>
             <div>1: {this.state.exercise}</div>
             <div>2: {this.state.exercise1}</div>
             <div>3: {this.state.exercise2}</div>
-          </Jumbotron>
-          <Jumbotron>
+          </Alert>
+          <Alert color="secondary">
             <h2>Cool Down</h2>
             <div>1: {this.state.cool}</div>
             <div>2: {this.state.cool1}</div>
-          </Jumbotron>
+          </Alert>
           <Alert color="primary">
             <h2>High 5</h2>
           </Alert>
