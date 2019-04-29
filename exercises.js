@@ -1,12 +1,12 @@
 export const data = {
     warmups: [
-    //"Jumping Jacks", //uncomment to cause pain
+      // "Jumping Jacks", // uncomment to cause pain
       "Windmill Toe Touches",
       "Partner Squats",
       "High Kicks",
       "Side Lunge",
       "Arm Circles",
-      "Twikle Toes (ballet kicks)",
+      "Twikle Toes (Ballet Kicks)",
       "Mini Arm Flops"
     ],
     exercises:[
@@ -16,18 +16,17 @@ export const data = {
       "Leg Raises",
       "Dips",
       "Peeing Dog",
-      "Wall sits",
+      "Wall Sits",
       "Lunge Walk",
-      "Frog Jumps",
-      "Planks",
-      "Calf raises"
+      "Calf Raises",
+      "Planks"
     ],
     cooldowns:[
       "Toe Touch",
       "Wall Lay",
-      "Arm stretches",
-      "Quad stretch",
-      "Calf stretch",
+      "Arm Stretches",
+      "Quad Stretch",
+      "Calf Stretch",
       "Splits",
       "Runner Stretch",
       "Butterfly Stretch"
