@@ -19,7 +19,8 @@ export const data = {
       "Wall Sits",
       "Lunge Walk",
       "Calf Raises",
-      "Planks"
+      "Planks",
+      "Burpees"
     ],
     cooldowns:[
       "Toe Touch",
