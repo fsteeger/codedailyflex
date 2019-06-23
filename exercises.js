@@ -30,6 +30,7 @@ export const data = {
       "Calf Stretch",
       "Splits",
       "Runner Stretch",
-      "Butterfly Stretch"
+      "Butterfly Stretch",
+      "Neck Rolls"
     ]
   };
