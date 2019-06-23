@@ -1,7 +1,7 @@
 import React from 'react';
-import { generateRandomNumbers,getGif } from './helper'
+import { generateRandomNumbers } from './helper'
 import { render } from 'react-dom';
-import { data } from './exercises'
+import { data } from './exercisesData'
 import { Button,Alert } from 'reactstrap';
 
 
@@ -12,7 +12,6 @@ class DailyFlex extends React.Component {
 
   constructor(props) {
     super(props);
-    //var lala = getGif();
     this.handleClick = this.handleClick.bind(this);
     this.state = { warmup: 0,
     warmup1: 0,
@@ -66,19 +65,19 @@ class DailyFlex extends React.Component {
         <div style={{display: this.state.showExercises }}>
           <Alert color="secondary">
             <h2>Warm up</h2>
-            <div>1: {this.state.warmup}</div>
-            <div>2: {this.state.warmup1}</div>
+            <div><a target="_blank" src={this.state.warmup.gifName}> 1: {this.state.warmup.name}</a></div>
+            <div><a target="_blank" src={this.state.warmup1.gifName}> 2: {this.state.warmup1.name}</a></div>
           </Alert>
           <Alert color="secondary">
             <h2>Exercise</h2>
-            <div>1: {this.state.exercise}</div>
-            <div>2: {this.state.exercise1}</div>
-            <div>3: {this.state.exercise2}</div>
+            <div>1: {this.state.exercise.name}</div>
+            <div>2: {this.state.exercise1.name}</div>
+            <div>3: {this.state.exercise2.name}</div>
           </Alert>
           <Alert color="secondary">
             <h2>Cool Down</h2>
-            <div>1: {this.state.cool}</div>
-            <div>2: {this.state.cool1}</div>
+            <div>1: {this.state.cool.name}</div>
+            <div>2: {this.state.cool1.name}</div>
           </Alert>
           <Alert color="primary">
             <h2>High 5</h2>
