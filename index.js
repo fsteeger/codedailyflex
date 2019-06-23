@@ -58,7 +58,7 @@ class DailyFlex extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class='container'>
         <h1>CODE Daily Flex</h1>
         <Button  color="primary" onClick={this.handleClick.bind(this)}
         >Create Workout</Button>
