@@ -1,8 +1,8 @@
 .workoutItem{
   padding: 2px;
-  margin: 0;
 }
 
 .btn{
-  width: 100%
+  width: 100%;
+  height: 4em;
 }
