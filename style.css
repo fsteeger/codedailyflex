@@ -1,7 +1,7 @@
-h1, p {
+body {
   font-family: Lato;
 }
 
-.root{
+.container{
   width: 80%;
 }
