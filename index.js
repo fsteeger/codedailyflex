@@ -4,6 +4,7 @@ import { render } from 'react-dom';
 import { data } from './exercisesData'
 import { Button, Alert } from 'reactstrap';
 import WorkoutItem from './src/WorkoutItem';
+import './style.css';
 
 
 class DailyFlex extends React.Component {

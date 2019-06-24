@@ -32,6 +32,10 @@ export default class WorkoutItem extends Component {
           <ModalBody>
             That's how you do it:
             <iframe src={this.state.data.gifName} width="480" height="405" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href={this.state.data.gifName}>via GIPHY</a></p>
+            <p>This is  
+            {" "+this.state.data.difficulty}
+             </p>
+            
           
           </ModalBody>
           <ModalFooter>
