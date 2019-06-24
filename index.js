@@ -2,37 +2,30 @@ import React from 'react';
 import { generateRandomNumbers } from './helper'
 import { render } from 'react-dom';
 import { data } from './exercisesData'
-import { Button,Alert } from 'reactstrap';
+import { Button, Alert } from 'reactstrap';
+import WorkoutItem from './src/WorkoutItem';
 
-
-  
 
 class DailyFlex extends React.Component {
+
+
+  handleClick() {
+    const max = 100;
+    this.setState({
+      showExercises: 'block',
+      showButton: 'none'
+    });
+    
+  }
 
 
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.state = { warmup: 0,
-    warmup1: 0,
-    exercise: 0,
-    exercise1: 0,
-    exercise2: 0,
-    cool: 0,
-    cool1: 0,
-    showExercises: 'none' };
-  }
-
-  
-
-  
-  handleClick() {
-    const max = 100;
-    var warmUps = generateRandomNumbers(2,data.warmups.length);
-    var exercises = generateRandomNumbers(3,data.exercises.length);
-    var coolDowns = generateRandomNumbers(2,data.cooldowns.length);
-
-    this.setState({ 
+    var warmUps = generateRandomNumbers(2, data.warmups.length);
+    var exercises = generateRandomNumbers(3, data.exercises.length);
+    var coolDowns = generateRandomNumbers(2, data.cooldowns.length);
+    this.state = {
       warmup: data.warmups[warmUps[0]],
       warmup1: data.warmups[warmUps[1]],
       exercise: data.exercises[exercises[0]],
@@ -40,44 +33,53 @@ class DailyFlex extends React.Component {
       exercise2: data.exercises[exercises[2]],
       cool: data.cooldowns[coolDowns[0]],
       cool1: data.cooldowns[coolDowns[1]],
-      showExercises: 'block'
-      });
+      showExercises: 'none',
+      showButton: 'block'
+    };
   }
 
-  handleClickReset() {
-    this.setState({ warmup: 0,
-    warmup1: 0,
-    exercise: 0,
-    exercise1: 0,
-    exercise2: 0,
-    cool: 0,
-    cool1: 0 
-    });
-  }
+
+
 
   render() {
     return (
       <div class='container'>
         <h1>CODE Daily Flex</h1>
-        <Button  color="primary" onClick={this.handleClick.bind(this)}
+        <Button color="primary" onClick={this.handleClick.bind(this)} style={{ display: this.state.showButton }}
         >Create Workout</Button>
         <hr />
-        <div style={{display: this.state.showExercises }}>
+        <div>
+        </div>
+        <div class='workoutList' style={{ display: this.state.showExercises }}>
           <Alert color="secondary">
             <h2>Warm up</h2>
-            <div><a target="_blank" src={this.state.warmup.gifName}> 1: {this.state.warmup.name}</a></div>
-            <div><a target="_blank" src={this.state.warmup1.gifName}> 2: {this.state.warmup1.name}</a></div>
+            <WorkoutItem workoutData={this.state.warmup}>
+              {this.state.warmup.name}
+            </WorkoutItem>
+            <WorkoutItem workoutData={this.state.warmup1}>
+              {this.state.warmup1.name}
+            </WorkoutItem>
           </Alert>
           <Alert color="secondary">
             <h2>Exercise</h2>
-            <div>1: {this.state.exercise.name}</div>
-            <div>2: {this.state.exercise1.name}</div>
-            <div>3: {this.state.exercise2.name}</div>
+            <WorkoutItem workoutData={this.state.exercise}>
+              {this.state.exercise.name}
+            </WorkoutItem>
+            <WorkoutItem workoutData={this.state.exercise1}>
+              {this.state.exercise1.name}
+            </WorkoutItem>
+            <WorkoutItem workoutData={this.state.exercise2}>
+              {this.state.exercise2.name}
+            </WorkoutItem>
           </Alert>
           <Alert color="secondary">
             <h2>Cool Down</h2>
-            <div>1: {this.state.cool.name}</div>
-            <div>2: {this.state.cool1.name}</div>
+            <WorkoutItem workoutData={this.state.cool}>
+              {this.state.cool.name}
+            </WorkoutItem>
+            <WorkoutItem workoutData={this.state.cool1}>
+              {this.state.cool1.name}
+            </WorkoutItem>
           </Alert>
           <Alert color="primary">
             <h2>High 5</h2>
