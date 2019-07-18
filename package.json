@@ -6,7 +6,7 @@
     "giphy-api": "^2.0.1",
     "react": "16.8.0",
     "react-dom": "16.8.6",
-    "react-native": "0.59.9",
+    "react-native": "0.60.4",
     "reactstrap": "8.0.0"
   },
   "scripts": {
