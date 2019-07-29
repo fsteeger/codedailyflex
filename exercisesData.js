@@ -8,7 +8,7 @@ export const data = {
     "https://giphy.com/embed/3og0IEF16olcKHWMUg" },
     { name: "Side Lunge", difficulty: "easy", gifName: "https://giphy.com/embed/ERhXXchj8U55m" },
     { name: "Arm Circles", difficulty: "easy", gifName: "https://giphy.com/embed/RfGrmJFHohZaWml8Ng" },
-    { name: "Twikle Toes (Ballet Kicks)", difficulty: "medium", gifName: "https://giphy.com/embed/TRHmYeW5KOFG" },
+    { name: "Twinkle Toes (Ballet Kicks)", difficulty: "medium", gifName: "https://giphy.com/embed/TRHmYeW5KOFG" },
     { name: "Mini Arm Flops", difficulty: "easy", gifName: "https://giphy.com/embed/XeXzWgD6P4LG8" }
   ],
   exercises: [
