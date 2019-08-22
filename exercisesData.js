@@ -23,7 +23,8 @@ export const data = {
     { name: "Calf Raises", difficulty: "easy", gifName: "https://giphy.com/embed/4VYaL0JOguZrBgjQOt" },
     { name: "Planks", difficulty: "medium", gifName: "https://giphy.com/embed/CLjw2mHysNEYw" },
     { name: "Bicep Curls", difficulty: "easy", gifName: "https://giphy.com/gifs/fX86roUOhW6GTzksj5" },
-    { name: "Burpees", difficulty: "hard", gifName: "https://giphy.com/embed/efe2FPcBhxxuiRPf80" }
+    { name: "Burpees", difficulty: "hard", gifName: "https://giphy.com/embed/efe2FPcBhxxuiRPf80" },
+    { name: "Ab Rollout", difficulty: "hard", gifName: "https://giphy.com/gifs/Temec7OTIwpyWefRQg" }
   ],
   cooldowns: [
     { name: "Toe Touch", difficulty: "easy", gifName: "https://giphy.com/embed/XeXzWgD6P4LG8" },
