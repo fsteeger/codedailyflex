@@ -25,7 +25,7 @@ export default class WorkoutItem extends Component {
 
   render() {
     return (
-      <div class='workoutItem'>
+      <div className='workoutItem'>
         <Button color="secondary" onClick={this.toggle}>{this.props.buttonLabel}{this.state.data.name}</Button>
         <Modal isOpen={this.state.modal} fade={false} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>{this.state.data.name}</ModalHeader>
