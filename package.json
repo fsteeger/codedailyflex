@@ -5,7 +5,7 @@
   "dependencies": {
     "giphy-api": "^2.0.1",
     "react": "16.8.0",
-    "react-dom": "16.10.1",
+    "react-dom": "16.10.2",
     "react-native": "0.61.1",
     "reactstrap": "8.0.1"
   },
