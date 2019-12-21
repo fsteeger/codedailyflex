@@ -25,7 +25,7 @@ export const data = {
     { name: "Bicep Curls", difficulty: "easy", gifName: "https://giphy.com/embed/fX86roUOhW6GTzksj5" },
     { name: "Burpees", difficulty: "hard", gifName: "https://giphy.com/embed/efe2FPcBhxxuiRPf80" },
     { name: "Ab Rollout", difficulty: "hard", gifName: "https://giphy.com/embed/Temec7OTIwpyWefRQg" },
-    { name: "The Cyclist", difficulty: "medium", gifName: "https://imgur.com/AVePTPg" }
+    { name: "The Cyclist", difficulty: "medium", gifName: "https://giphy.com/embed/hW3rOd83ogSwr1yYzo" }
   ],
   cooldowns: [
     { name: "Toe Touch", difficulty: "easy", gifName: "https://giphy.com/embed/XeXzWgD6P4LG8" },
