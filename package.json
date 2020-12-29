@@ -7,7 +7,7 @@
     "react": "16.8.0",
     "react-dom": "16.10.1",
     "react-native": "0.61.1",
-    "reactstrap": "8.0.1"
+    "reactstrap": "8.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
