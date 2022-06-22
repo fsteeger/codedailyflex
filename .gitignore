@@ -36,6 +36,8 @@ build/Release
 node_modules/
 jspm_packages/
 
+build/
+
 # TypeScript v1 declaration files
 typings/
 
@@ -47,6 +49,8 @@ typings/
 
 # Optional REPL history
 .node_repl_history
+
+package-lock.json
 
 # Output of 'npm pack'
 *.tgz
